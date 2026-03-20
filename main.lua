@@ -6,17 +6,17 @@ getgenv().Setting = {
     ["Melee"] = {
         ["Enable"] = true,
         ["Z"] = {Enable = true, HoldTime = 0.05, WaitNextSkill = 0.6},
-        ["X"] = {Enable = true, HoldTime = 0.05, WaitNextSkill = 0.6}, -- FIXED
+        ["X"] = {Enable = true, HoldTime = 0.05, WaitNextSkill = 0.6},
         ["C"] = {Enable = true, HoldTime = 0.05, WaitNextSkill = 0.6},
         ["Delay"] = 1.5
-    },
+    },       
 
     ["Sword"] = {
         ["Enable"] = true,
         ["Z"] = {Enable = true, HoldTime = 0.05, WaitNextSkill = 0.6},
         ["X"] = {Enable = true, HoldTime = 0.05, WaitNextSkill = 0.6},
         ["Delay"] = 1
-    },
+    },        
 
     ["Gun"] = {
         ["Enable"] = false,
@@ -24,7 +24,7 @@ getgenv().Setting = {
         ["X"] = {Enable = true, HoldTime = 0.05, WaitNextSkill = 0.6},
         ["Delay"] = 1,
         ["GunMode"] = false
-    },
+    },        
 
     ["Fruit"] = {
         ["Enable"] = false,
@@ -34,12 +34,12 @@ getgenv().Setting = {
         ["V"] = {Enable = false, HoldTime = 0.05, WaitNextSkill = 0.6},
         ["F"] = {Enable = true, HoldTime = 0.05, WaitNextSkill = 0.6},
         ["Delay"] = 1
-    },
+    },        
 
     ["Hunt"] = {
         ["Min"] = 0,
         ["Max"] = 30000000
-    },
+    },       
 
     ["Skip"] = {
         ["Fruit"] = false,
@@ -47,14 +47,14 @@ getgenv().Setting = {
         ["SafeZone"] = true,
         ["NoHaki"] = true,
         ["NoPvP"] = true
-    },
+    },        
 
     ["SafeHealth"] = {
         ["Health"] = 5200,
         ["Mask"] = false,
         ["MaskType"] = "Mask",
         ["RaceV4"] = false
-    },
+    },        
 
     ["Another"] = {
         ["V3"] = true,
@@ -93,14 +93,9 @@ getgenv().Setting = {
     }
 }
 
+--// MAIN SCRIPT LOADER
 task.spawn(function()
     pcall(function()
         loadstring(game:HttpGet("https://luacrack.site/raw.php/MatsuneHubSuppor/raw/Gamemod2.lua"))()
-    end)
-end)
-
-task.spawn(function()
-    pcall(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Jadelly261/BloxFruits/main/Cookie"))()
     end)
 end)
